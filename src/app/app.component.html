@@ -20,4 +20,20 @@
   <p>Puede visitar el sitio ingresando <a href="{{sitio}}">aquí</a></p>
 </div>
 
+<hr>
+
+<div>
+  <p>Nombre del empleado: {{nombre}}</p>
+  <p>Edad: {{edad}}</p>
+  <p *ngIf = 'edad >= 18 '>Es mayor de edad.</p>
+  <table border="1">
+    <tr>
+      <th>Sueldos</th>
+    </tr>
+    <tr *ngFor = 'let sueldo of sueldos'>
+      <td>{{sueldo}}</td>
+    </tr>
+  </table>
+</div>
+
 <router-outlet></router-outlet>
