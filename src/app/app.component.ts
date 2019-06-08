@@ -15,6 +15,8 @@ export class AppComponent {
   activo = true;
   sitio = 'http://www.google.com';
 
+  contador = 1;
+
   esActivo() {
     if (this.activo)
       return 'Trabajador Activo';
@@ -29,4 +31,13 @@ export class AppComponent {
     }
     return suma;
   }
+
+  incrementar() {
+    this.contador++;
+  }
+
+  decrementar() {
+    this.contador--;
+  }
+  
 }
