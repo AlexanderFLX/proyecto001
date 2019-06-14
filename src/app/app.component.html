@@ -44,4 +44,12 @@
   <button (click)="decrementar()">Restar 1</button>
 </div>
 
+<hr>
+
+<div>
+  <p>Ingrese nombre: <input type="text" [(ngModel)]="nombre2"></p>
+  <p>Ingrese apellido: <input type="text" [(ngModel)]="apellido2"></p>
+  <p>Nombre completo: {{nombre2}}, {{apellido2}}</p>
+</div>
+
 <router-outlet></router-outlet>

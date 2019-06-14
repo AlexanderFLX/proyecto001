@@ -17,6 +17,9 @@ export class AppComponent {
 
   contador = 1;
 
+  nombre2 = '';
+  apellido2 = '';
+
   esActivo() {
     if (this.activo)
       return 'Trabajador Activo';
